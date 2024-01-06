@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-export function Inputs(props) {
+interface Props extends React.InputHTMLAttributes<HTMLInputElement> { }
+
+export function Inputs(props: Props) {
     return (
         <input
             className='block w-full rounded-md border-0 py-1.5
